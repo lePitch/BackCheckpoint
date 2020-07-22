@@ -7,7 +7,7 @@ import java.util.*;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/members")
+@RequestMapping("/teams")
 public class TeamController {
     @Autowired TeamService service;
 
