@@ -4,6 +4,15 @@ public class FileInfo {
 
   private String name;
   private String url;
+  private Long id;
+
+  public Long getId() {
+    return id;
+  }
+
+  public void setId(Long id) {
+    this.id = id;
+  }
 
   public FileInfo(String name, String url) {
     this.name = name;
