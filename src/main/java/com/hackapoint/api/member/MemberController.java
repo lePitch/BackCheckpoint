@@ -1,5 +1,5 @@
 package com.hackapoint.api.member;
-import com.hackapoint.api.hackathon.Hackathon;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,8 +27,9 @@ public class MemberController {
     public Member editMember(@RequestBody Member m, @PathVariable Long id)
     { return service.editMember(m, id);}
 
-    @DeleteMapping("/{id}")
-    public void deleteOne(@PathVariable Long id)
-    { service.deleteMember(id);}
 
+    @DeleteMapping("/{id}")
+    public void deleteMember(@PathVariable(value = "id") Long id) {
+        service.delete(id);
+    }
 }

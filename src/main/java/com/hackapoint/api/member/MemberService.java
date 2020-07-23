@@ -18,15 +18,15 @@ public class MemberService {
     {
         Member updated = m;
         Member toUpdate = repository.getOne(id);
-        toUpdate.setActivity(m.getActivity());
-        toUpdate.setAvatar(m.getAvatar());
-        toUpdate.setName(m.getName());
-        toUpdate.setQuote(m.getQuote());
-        toUpdate.setTeam(m.getTeam());
+        toUpdate.setActivity(updated.getActivity());
+        toUpdate.setAvatar(updated.getAvatar());
+        toUpdate.setName(updated.getName());
+        toUpdate.setQuote(updated.getQuote());
+        toUpdate.setTeam(updated.getTeam());
 
         return repository.save(toUpdate);
     }
-    public void deleteMember(Long id){ repository.deleteById(id);}
+    public void delete(Long id){ repository.deleteById(id);}
 
 
 }

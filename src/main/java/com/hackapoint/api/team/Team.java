@@ -23,7 +23,7 @@ public class Team {
     private Hackathon hackathon;
 
     @LazyCollection(LazyCollectionOption.FALSE)
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "team")
+    @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "team")
     @JsonManagedReference
     private Set<Member> members;
 
