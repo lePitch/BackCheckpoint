@@ -28,8 +28,17 @@ public class Team {
     private Set<Member> members;
 
     private String name;
+    private String avatar;
 
     public Team() {
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
     }
 
     public Long getId() {

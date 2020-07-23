@@ -21,10 +21,17 @@ public class Hackathon {
     private Set<Team> teams;
 
     private String name;
+    private String avatar;
 
     public Hackathon() {
     }
 
+    public String getAvatar() {
+        return avatar;
+    }
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
     public Long getId() {
         return id;
     }
