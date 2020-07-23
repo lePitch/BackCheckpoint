@@ -18,7 +18,7 @@ public class HackathonService {
     public Optional<Hackathon> getHackathonById(Long id){ return repository.findById(id);}
 
     public Hackathon newHack(Hackathon h){
-        h.setAvatar(avatar.setAvatar(h.getName()));
+        h.setAvatar(avatar.setHackathonAvatar(h.getName()));
         return repository.save(h);}
 
     public void deleteHack(Long id){ repository.deleteById(id);}

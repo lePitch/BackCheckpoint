@@ -15,7 +15,7 @@ public class TeamService {
 
     public Optional<Team> getById(Long id){ return repository.findById(id);}
     public Team newTeam(Team t){
-        t.setAvatar(avatar.setAvatar(t.getName()));
+        t.setAvatar(avatar.setTeamAvatar(t.getName()));
         return repository.save(t);}
     public void deleteTeam(Long id){ repository.deleteById(id);}
 

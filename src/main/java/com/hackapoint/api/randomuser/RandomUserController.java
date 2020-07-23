@@ -3,7 +3,6 @@ package com.hackapoint.api.randomuser;
 import com.hackapoint.api.member.Member;
 import com.hackapoint.api.member.MemberRepository;
 import com.hackapoint.api.member.MemberService;
-import com.hackapoint.api.team.Team;
 import com.hackapoint.api.team.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
