@@ -16,8 +16,7 @@ public class SwaggerConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.invertabrates.api"))
-                .apis(Predicate.not(RequestHandlerSelectors.basePackage("com.invertabrates.api.counter")))
+                .apis(RequestHandlerSelectors.basePackage("com.hackapoint.api"))
                 .paths(PathSelectors.any())
                 .build();
     }
