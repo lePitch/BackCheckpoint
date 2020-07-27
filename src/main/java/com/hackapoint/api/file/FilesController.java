@@ -19,8 +19,8 @@ public class FilesController {
   @Autowired
   FilesStorageService storageService;
 
-  @PostMapping("/uploads/{id}")
-  public ResponseEntity<ResponseMessage> uploadFile(@PathVariable Long id, @RequestParam("file") MultipartFile file) {
+  @PostMapping("/uploads")
+  public ResponseEntity<ResponseMessage> uploadFile(@RequestParam("file") MultipartFile file) {
     String message = "";
     try {
       storageService.save(file);
