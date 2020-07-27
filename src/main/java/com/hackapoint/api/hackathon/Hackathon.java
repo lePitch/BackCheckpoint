@@ -16,7 +16,7 @@ public class Hackathon {
     private Long id;
 
     @LazyCollection(LazyCollectionOption.FALSE)
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "hackathon")
+    @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "hackathon")
     @JsonManagedReference
     private Set<Team> teams;
 
