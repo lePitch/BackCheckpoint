@@ -7,13 +7,13 @@ public class Avatar {
 
     public String setTeamAvatar(String name){
         String ext = ".svg?w=400";
-        String url = "https://avatars.dicebear.com/api/identicon/";
+        String url = "https://avatars.dicebear.com/api/jdenticon/";
         return url+name+ext;
     }
 
     public String setHackathonAvatar(String name){
         String ext = ".svg?w=400";
-        String url = "https://avatars.dicebear.com/api/jdenticon/";
+        String url = "https://avatars.dicebear.com/api/identicon/";
         return url+name+ext;
     }
     public String setAvatar(String name){
